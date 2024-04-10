@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "laloca";
+  src: url(./ARCHIVOS/Langita.woff), format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #feffdb, #6DFFD2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px;
+  color: #179492;
+  font-family: "laloca";
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #feffdb, #6DFFD2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#info, #foot {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  margin: 20px;
+  color: #037876;
+}
+
+.button {
+  font-family: "DM Sans", sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 30px;
+  color: #179492;
+  outline: none;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #179492;
+  opacity: 80%;
+  color: white;
+}
+
+h2 {
+  font-family: "laloca";
+  font-size: 20px;
+  font-weight: lighter;
+  border: #179492;
+  color: white;
+  background: #179492;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+#callto {
+  font-family: "DM Sans", sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 30px;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  background-color: #179492;
+  font-weight: bold;
+}
+
+#callto:hover,
+#callto:focus {
+  background-color: white;
+  color: #179492;
+  font-weight: bolder;
+}
+
+img {
+  width: 10px;
+}/*# sourceMappingURL=style.css.map */

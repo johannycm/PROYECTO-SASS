@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "laloca";
+  src: url(./ARCHIVOS/Langita.woff), format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #feffdb, #6DFFD2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 70px;
+  color: #179492;
+  font-family: "laloca";
+  margin-top: 40px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #feffdb, #6DFFD2);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.button {
+  font-family: "DM Sans", sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 30px;
+  color: #179492;
+  outline: none;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #179492;
+  opacity: 80%;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: row dense;
+  grid-template-areas: "foto1 enunciado enunciado" "foto1 parrafo parrafo" "foto1 parrafo parrafo";
+  gap: 5px 5px;
+  width: 59%;
+  height: 50%;
+}
+
+.foto1 {
+  grid-area: foto1;
+}
+
+.enunciado {
+  grid-area: enunciado;
+  color: #037876;
+  font-family: "laloca";
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #037876;
+}
+
+#callto {
+  font-size: 20px;
+  font-family: "laloca";
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #179492;
+  border-radius: 30px;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+#callto {
+  font-weight: bold;
+}
+
+#callto:hover,
+#callto:focus {
+  background-color: white;
+  color: #179492;
+}
+
+.parrafo {
+  grid-area: parrafo;
+  font-family: "DM Sans", sans-serif;
+  color: #037876;
+  text-align: justify;
+  margin-top: 8px;
+}
+
+p {
+  padding: 7px;
+  font-size: 19px;
+}
+
+#foot {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #037876;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 330px;
+}
+
+img:hover,
+img:focus {
+  transform: scale(1.2);
+  transform: scale(1.2);
+}/*# sourceMappingURL=3aboutme.css.map */

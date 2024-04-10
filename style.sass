@@ -1,0 +1,104 @@
+
+$gradient: linear-gradient(to bottom right, #feffdb, #6DFFD2)
+$titular: 60px
+$parrafo: 20px
+$titularcolor: #179492
+$parrafocolor: #037876
+
+@font-face 
+    font-family: "laloca"
+    src: url(./ARCHIVOS/Langita.woff),format("woff")
+
+@mixin font ($parametro1,)
+    font-family: "laloca"
+    font-size: $parametro1
+
+@mixin tamañoestandar
+    width: 100%
+    height: 100vh
+    background: $gradient
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+@mixin botones($colorfont)
+    font-family: "DM Sans", sans-serif
+    display: inline-block
+    padding: 10px 20px
+    margin-top: 20px
+    text-align: center  
+    text-decoration: none
+    background-color: transparent
+    border-radius: 30px 
+    color: $colorfont
+    outline: none
+    transition: 0.3s
+    border: 2px solid transparent
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    top: 0
+    font-size: 20px
+
+body
+    @include tamañoestandar
+
+h1 
+    font-size: 100px 
+    color:$titularcolor
+    font-family: "laloca"
+
+main
+    width: 100%
+    height: 100vh
+    background: $gradient
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+#info
+    font-family: "DM Sans", sans-serif
+    font-size: 16px
+    margin: 20px
+    color:$parrafocolor
+
+.button
+    @include botones($titularcolor)
+    font-weight: bold
+
+.button:hover,
+.button:focus 
+    background-color: $titularcolor
+    opacity: 80%
+    color: white
+
+h2
+    @include font (20px)
+    font-weight: lighter
+    border: $titularcolor
+    color: white
+    background: $titularcolor
+    padding: 14px 28px
+    cursor: pointer
+    border-radius: 50px
+
+#foot
+    @extend #info
+
+#callto
+    @include botones(white)
+    background-color: $titularcolor
+    font-weight: bold
+
+#callto:hover,
+#callto:focus 
+    background-color: white
+    color: $titularcolor
+    font-weight: bolder
+
+img
+    width: 10px
+    

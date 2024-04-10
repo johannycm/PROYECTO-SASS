@@ -1,0 +1,132 @@
+
+$gradient: linear-gradient(to bottom right, #feffdb, #6DFFD2)
+$titular: 60px
+$parrafo: 20px
+$titularcolor: #179492
+$parrafocolor: #037876
+
+@font-face 
+    font-family: "laloca"
+    src: url(./ARCHIVOS/Langita.woff),format("woff")
+
+@mixin font ($parametro1,)
+    font-family: "laloca"
+    font-size: $parametro1
+
+@mixin tamañoestandar
+    width: 100%
+    height: 100vh
+    background: $gradient
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+@mixin botones($colorfont)
+    font-family: "DM Sans", sans-serif
+    display: inline-block
+    padding: 10px 20px
+    margin-top: 20px
+    text-align: center  
+    text-decoration: none
+    background-color: transparent
+    border-radius: 30px 
+    color: $colorfont
+    outline: none
+    transition: 0.3s
+    border: 2px solid transparent
+*
+    box-sizing: border-box
+    padding: 0%
+    margin: 0%
+    top: 0%
+    font-size: 20px
+
+body
+    @include tamañoestandar
+
+.container
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: repeat(3, 1fr) 
+    grid-template-areas: "foto1 foto2 foto2 foto3 foto3" "foto4 foto4 foto5 foto6 foto7" "foto8 foto9 foto9 foto10 foto7" 
+    gap: 5px
+    
+.foto1 
+    grid-area: foto1
+
+.foto2 
+    grid-area: foto2
+
+.foto3 
+    grid-area: foto3
+
+.foto4 
+    grid-area: foto4
+
+.foto5 
+    grid-area: foto5
+
+.foto6 
+    grid-area: foto6
+
+.foto7 
+    grid-area: foto7
+
+.foto8
+    grid-area: foto8
+
+.foto9 
+    grid-area: foto9
+
+.foto10 
+    grid-area: foto10
+
+.rectangulo
+    width: 347px
+    height: 172px
+
+.cuadrado
+    width: 172px    
+
+#vertical
+    width: 169px
+    margin: 2px 
+
+main
+    width: 100%
+    height: 100vh
+    background: $gradient
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 0px
+    padding: 0px
+
+.button
+    @include botones($titularcolor)
+    font-weight: bolder
+
+.button:hover,
+.button:focus 
+    background-color: $titularcolor
+    opacity: 80%
+    color: white
+
+#foot
+    font-family: "DM Sans", sans-serif
+    margin: 20px
+    color:$parrafocolor
+    font-size: 16px
+
+img:hover,
+img:focus 
+    transform: scale(1.3) 
+    transform: scale(1.3)
+img
+    border: white 4px solid
+    box-shadow: 7px 7px 12px 0 $parrafocolor
+
+
+    
